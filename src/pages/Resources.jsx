@@ -45,7 +45,7 @@ export default function Resources() {
         <h2>Enter Resource Details</h2>
         <p>Enter resource information here</p><br/>
             <label htmlFor='fullname'>Full Name</label> <br/>
-            <input type="text" name='fullname' id='fullname' value={fullName} placeholder=' Enter a Vendor Details.....' onChange={(e)=>setFullName(e.target.value)}/><br/> <br/>
+            <input type="text" name='fullname' id='fullname' value={fullName} placeholder=' Enter a name.....' onChange={(e)=>setFullName(e.target.value)}/><br/> <br/>
 
             <label htmlFor='filename'>Upload Resume</label> <br/>
             <input type="file" name='resume' id='filename'   onChange={(e)=>setResume(e.target.files[0])}/><br/> <br/>
