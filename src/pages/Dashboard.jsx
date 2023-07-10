@@ -1,9 +1,9 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 export default function Dashboard() {
   const [data,setData]=useState([])
-  const navigate=useNavigate()
+ 
   useEffect(()=>{
     axios.get("https://wit-back.onrender.com/resource").then((res)=>setData(res.data)).catch((err)=>console.log(err))
   },[])
@@ -25,7 +25,7 @@ export default function Dashboard() {
       <td>{item.name}</td>
       <td>{item.vendorname}</td>
       <td>{item.technology}</td>
-      <td><Link to={`https://wit-back.onrender.com/image/${item.image}`}><button onClick={(e)=>navigate("/dashboard")} className=' b'>Download</button></Link></td>
+      <td><Link to={`https://wit-back.onrender.com/image/${item.image}`}><button  className=' b'>Download</button></Link></td>
 
     
     </tr>
