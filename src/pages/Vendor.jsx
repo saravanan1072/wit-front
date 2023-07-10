@@ -24,7 +24,7 @@ export default function Vendor() {
        <div className='center'>
        <form>
         <h2>Vendor Form</h2>
-            <input type="text" name='state' id='input' value={vendor} placeholder=' Enter a Vendor Details.....' onChange={(e)=>setVendor(e.target.value)}/><br/>
+            <input type="text" name='state' id='input' value={vendor} placeholder=' Enter a Vendor Details.....' onChange={(e)=>setVendor(e.target.value)} required/><br/>
             <button onClick={handle} className='btn'>submit</button> <br/>
            <p> {message}</p><br/>
         </form>

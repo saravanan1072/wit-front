@@ -45,13 +45,13 @@ export default function Resources() {
         <h2>Enter Resource Details</h2>
         <p>Enter resource information here</p><br/>
             <label htmlFor='fullname'>Full Name</label> <br/>
-            <input type="text" name='fullname' id='fullname' value={fullName} placeholder=' Enter a name.....' onChange={(e)=>setFullName(e.target.value)}/><br/> <br/>
+            <input type="text" name='fullname' id='fullname' value={fullName} placeholder=' Enter a name.....' onChange={(e)=>setFullName(e.target.value)} required/><br/> <br/>
 
             <label htmlFor='filename'>Upload Resume</label> <br/>
-            <input type="file" name='resume' id='filename'   onChange={(e)=>setResume(e.target.files[0])}/><br/> <br/>
+            <input type="file" name='resume' id='filename'   onChange={(e)=>setResume(e.target.files[0])} required/><br/> <br/>
             
             <label htmlFor='vendername'>Vendor Name</label> <br/> 
-            <select value={vendorName} onChange={(e)=>setVendorName(e.target.value)}>
+            <select value={vendorName} onChange={(e)=>setVendorName(e.target.value)} required>
             <option Value="" selected disabled>Select your option</option>
             {vendor?.map((option) =><option key={option.id} value={option.name}>{option.name}</option>)}
 

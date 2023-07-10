@@ -76,19 +76,22 @@ select{
   background-size: cover;
   display: flex;
   justify-content: center;
+  align-content: center;
  
 }
 table{
- width: 200%;
- margin-left: -200px;
+ /* width: 80vw; */
+ /* margin-left: -200px; */
   background-color: white;
   text-align: center;
+  align-self: center;
   
 }
 th{
   font-size: 22px;
 }
 .dash-center h1{
+  text-align: center;
   color: cadetblue;
 
 }
@@ -106,14 +109,14 @@ th{
   color: turquoise;
 }
 
-@media (max-width:420px) {
+/* @media (max-width:420px) {
   table{
-    width: 90%;
-    margin-left: 10px;
+    width: 50%;
+    margin-left: 50px;
      background-color: white;
      text-align: center;
      
    }
 
   
-}
+} */
